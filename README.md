@@ -28,9 +28,9 @@ All incoming orders will be placed in a directory called inbound_orders. Designe
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Magical way of running. No need to call any main scripts. Just call the current directory.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Each order has been allocated with UUID. Hence even two different orders with same header will be treated unique.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Imports are aligned per PEP8. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	First python STL, <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	then 3rd party <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	then local imports<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I.  First python STL, <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II.  then 3rd party <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III.  then local imports<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Intelligent rotating logger, with 5MB of max size and backup count of 5. But still this is configurable via config file. Change it as you wish.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Self is selfish, hence using “this” pointer. ☺ ☺ ☺ ☺ <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Made use of iter() in possible places while handling lists/tuples for memory efficiency. This makes looping with less memory usage instead loading entire array in memory<br>
