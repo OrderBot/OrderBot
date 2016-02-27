@@ -49,3 +49,20 @@ All incoming orders will be placed in a directory called inbound_orders. Designe
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── inbound_orders<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── logs<br>
 <br><br>
+<b><i>Details:-</b></i>
+<br>
+<b><i>BaseDB:-</b></i>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Database to hold ware house inventory. As of now being file stream considered for this scope, it has the JSON file as ware house stock data.
+<br><b><i>Config:-</b></i>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Config file for the project
+<br><b><i>InventoryProcessor:-</b></i>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Business logic to allocate oncoming  orders from ware house.
+<br><b><i>OrderReader:-</b></i>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Business logic to read orders from different streams. Streams in         current scope 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FileStreamReader.py     → reads from JSON file
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NetworkStreamReader.py → reads from Network(only template, not implemented)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DBStreamReader.py → reads from DB(only template, not implemented)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DistributedReader.py → Reads from Hadoop (only template, not implemented)
+
+
