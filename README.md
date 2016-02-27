@@ -65,13 +65,12 @@ All incoming orders will be placed in a directory called inbound_orders. Designe
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DBStreamReader.py → reads from DB(only template, not implemented)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DistributedReader.py → Reads from Hadoop (only template, not implemented)
 <br>
-<b><i>How to Run:-</b></i>
-<br>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Place your input orders in “inbound_orders” directory with a name “order_cust*.json”. <br>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Check the warehouse to make sure we have inventory.<br>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	BaseDB/ware_house.json<br>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Run the directory. Yes of course, coz when we run the application we just double click the icon and run it. So just to get this resemblance this approach has been made<br>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	cd to the project root. Run the below command<br>
+<b><i>How to Run:-</b></i><br>
+1.	Place your input orders in “inbound_orders” directory with a name “order_cust*.json”. 
+2.	Check the warehouse to make sure we have inventory.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BaseDB/ware_house.json
+3.	Run the directory, as in step 4. Yes of course, coz when we run the application we just double click the icon and run it. So just to get this resemblance this approach has been made
+4.	cd to the project root. Run the below command
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	python . File -i ./inbound_orders
 
 
