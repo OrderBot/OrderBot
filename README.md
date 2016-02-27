@@ -7,9 +7,9 @@ Given scope is an “Invoice (order and inventory) processing” system. Conside
 <br>
 Developed confirming to Publisher-Subscriber design pattern 
 <br>
-1.	Publisher  (Order receiver) – Itself confirms to factory pattern
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.	Publisher  (Order receiver) – Itself confirms to factory pattern
 <br>
-2.	Subscriber (Order Processor) – Simple OOAD
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.	Subscriber (Order Processor) – Simple OOAD
 <br><br>
 <b><i>Aim:- </b></i>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
