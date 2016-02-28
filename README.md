@@ -94,26 +94,6 @@ All incoming orders will be placed in a directory called inbound_orders. Designe
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“OrderedProduct”: <value>,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“OrderDetails:  (Requested, Processed, BackOrdered)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
-{
-			“Header” : <value>,
-			“OrderedProduct”: <value>,
-			“OrderDetails:  (Requested, Processed, BackOrdered)
-		}
-		],
-	UUID: [
-		{
-			“Header” : <value>,
-			“OrderedProduct”: <value>,
-			“OrderDetails:  (Requested, Processed, BackOrdered)
-		},
-{
-			“Header” : <value>,
-			“OrderedProduct”: <value>,
-			“OrderDetails:  (Requested, Processed, BackOrdered)
-		}
-		]
-	 
-}
 
 
 
