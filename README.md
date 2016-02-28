@@ -24,7 +24,7 @@ All incoming orders will be placed in a directory called inbound_orders. Designe
 <b><i>Salient Features:- </b></i>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Has it’s own config file. Hence many parameters can be passed to the project via setting them in config file. Not necessary to change the code. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	Example:- Inbound orders are read from  “inbound_orders/ order_cust*.json” in code. This can be changed via config file<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	Example:- Inbound orders are read from  "inbound_orders/ order_cust*.json" in code. This can be changed via config file<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Magical way of running. No need to call any main scripts. Just call the current directory.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Each order has been allocated with UUID. Hence even two different orders with same header will be treated unique.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Imports are aligned per PEP8. <br>
