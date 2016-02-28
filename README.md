@@ -84,8 +84,7 @@ All incoming orders will be placed in a directory called inbound_orders. Designe
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"Header": 1, "Lines": {"Product": "A", "Quantity": "1"}{"Product": "C", "Quantity": "0"}} <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;➢	Invalid Order:- <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"Header": 1, "Lines": {"Product": "D", "Quantity": "6"}} <br>
-
-➢	Final Output of the run will be in below JOSN format. This is because the format can be used as commit logs which is help full to retrieve any order info at later point of time, based on the UUID.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;➢	Final Output of the run will be in below JOSN format. This is because the format can be used as commit logs which is help full to retrieve any order info at later point of time, based on the UUID.
 
 Final Output:-
 	{ 
