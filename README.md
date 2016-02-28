@@ -32,6 +32,7 @@ All incoming orders will be placed in a directory called inbound_orders. Designe
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II.  then 3rd party <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III.  then local imports<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Intelligent rotating logger, with 5MB of max size and backup count of 5. But still this is configurable via config file. Change it as you wish.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Intelligent command line main module with GNU style command line options and help message.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Self is selfish, hence using “this” pointer. ☺ ☺ ☺ ☺ <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Made use of iter() in possible places while handling lists/tuples for memory efficiency. This makes looping with less memory usage instead loading entire array in memory<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	No more hard coding like if key == "Header", MACRO’s have been used which makes code much optimized. Hence any point if those names changes from “Header” to “Footer”, then all it takes just to change the MACRO, not a grep and replace thru entire source code.<br>
