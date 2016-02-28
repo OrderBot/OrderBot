@@ -5,7 +5,7 @@ Given scope is an “Invoice (order and inventory) processing” system. Conside
 <br><br>
 <b>Designed an intelligent Order Processing system capable of processing multiple invoices simultaneously.</b>
 <br>
-Developed confirming to Publisher-Subscriber design pattern 
+Developed to match Publisher-Subscriber pattern. Being proto type this implementation is made simple on the code without introducing any async messaging libraries like CELERY. Keeping ReaderFactory as publisher as it reads the order from DB and directly puts in to the subscriber which is InventoryAllocator, by employing multiprocessing queue in between them.
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.	Publisher  (Order receiver) – Itself confirms to factory pattern
 <br>
