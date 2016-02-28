@@ -64,6 +64,10 @@ All incoming orders will be placed in a directory called inbound_orders. Designe
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NetworkStreamReader.py → reads from Network(only template, not implemented)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DBStreamReader.py → reads from DB(only template, not implemented)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DistributedReader.py → Reads from Hadoop (only template, not implemented)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Utils:-</b></i>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All utility modules
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i>inbound_orders:-</b></i>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Incoming orders from customers
 <br><br>
 <b><i>How to Run:-</b></i><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Place your input orders in “inbound_orders” directory with a name “order_cust*.json”. <br>
