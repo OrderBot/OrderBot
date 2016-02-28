@@ -77,6 +77,45 @@ All incoming orders will be placed in a directory called inbound_orders. Designe
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Run the directory, as in step 4. Yes of course, coz when we run the application we just double click the icon and run it. So just to get this resemblance this approach has been made<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. cd to the project root. Run the below command<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i>python . File -i ./inbound_orders</b></i>
+<br><br>
+<b><i>Considerations:-</b></i>
+<br>
+➢	Valid Order(since A met the criteria): 
+	{"Header": 1, "Lines": {"Product": "A", "Quantity": "1"}{"Product": "C", "Quantity": "0"}}
+➢	Invalid Order:-
+	{"Header": 1, "Lines": {"Product": "B", "Quantity": "0"}}
+{"Header": 1, "Lines": {"Product": "D", "Quantity": "6"}}
+
+➢	Final Output of the run will be in below JOSN format. This is because the format can be used as commit logs which is help full to retrieve any order info at later point of time, based on the UUID.
+
+Final Output:-
+	{ 
+UUID: [
+		{
+			“Header” : <value>,
+			“OrderedProduct”: <value>,
+			“OrderDetails:  (Requested, Processed, BackOrdered)
+		},
+{
+			“Header” : <value>,
+			“OrderedProduct”: <value>,
+			“OrderDetails:  (Requested, Processed, BackOrdered)
+		}
+		],
+	UUID: [
+		{
+			“Header” : <value>,
+			“OrderedProduct”: <value>,
+			“OrderDetails:  (Requested, Processed, BackOrdered)
+		},
+{
+			“Header” : <value>,
+			“OrderedProduct”: <value>,
+			“OrderDetails:  (Requested, Processed, BackOrdered)
+		}
+		]
+	 
+}
 
 
 
