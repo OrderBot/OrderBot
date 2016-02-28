@@ -113,6 +113,6 @@ All incoming orders will be placed in a directory called inbound_orders. Designe
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;➢	if current stock is zero for an requested item, then order will skip to the next item, until whole stock becomes empty.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;➢	For any given item, available stock should not be zero and should be grater than requested order. If this criterion is not met for any current order, current item will be backordered and will proceed to next order. We will continue until whole stock becomes empty.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;➢	Inventory is kept in a json file as of now. Better scope is DB. All processes simultaneously access this file. Code is made sure that every process updates the file as per the inventory it processed, so that next process will continue from where last process left it. So when you run the application continuously, you can observe that the stock is getting reduced gradually.<br>
 
