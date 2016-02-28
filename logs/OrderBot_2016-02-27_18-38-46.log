@@ -1,0 +1,16 @@
+2016-02-27 18:38:46,225 - OrderBotLogger - INFO - Current Available Stock: {u'A': 100, u'C': 92, u'B': 100, u'E': 5, u'D': 3}
+2016-02-27 18:38:46,226 - OrderBotLogger - INFO - Ordered Product: Z
+2016-02-27 18:38:46,226 - OrderBotLogger - INFO - Requested product not available in stock.
+Proceeding to next order 
+2016-02-27 18:38:46,226 - OrderBotLogger - WARNING - 'Z'
+2016-02-27 18:38:46,226 - OrderBotLogger - INFO - Ordered Product: C
+2016-02-27 18:38:46,227 - OrderBotLogger - INFO - Allocating items from ware house...
+2016-02-27 18:38:46,227 - OrderBotLogger - INFO - Order Completed Successfully
+2016-02-27 18:38:46,227 - OrderBotLogger - INFO - Remaining Stock: {u'A': 100, u'C': 91, u'B': 100, u'E': 5, u'D': 3}
+2016-02-27 18:38:46,228 - OrderBotLogger - INFO - Ordered Product: E
+2016-02-27 18:38:46,229 - OrderBotLogger - INFO - Requested product E out of stock. Doing back order, Will get back to you soon.
+2016-02-27 18:38:46,229 - OrderBotLogger - INFO - Remaining Stock: {u'A': 100, u'C': 91, u'B': 100, u'E': 5, u'D': 3}
+2016-02-27 18:38:46,232 - OrderBotLogger - INFO - Current Available Stock: {u'A': 100, u'C': 91, u'B': 100, u'E': 5, u'D': 3}
+2016-02-27 18:38:46,232 - OrderBotLogger - INFO - Ordered Product: D
+2016-02-27 18:38:46,233 - OrderBotLogger - INFO - Requested product D out of stock. Doing back order, Will get back to you soon.
+2016-02-27 18:38:46,233 - OrderBotLogger - INFO - Remaining Stock: {u'A': 100, u'C': 91, u'B': 100, u'E': 5, u'D': 3}

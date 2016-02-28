@@ -1,0 +1,13 @@
+{  
+   "Header":1,
+   "Lines":[  
+      {  
+         "Product":"Z",
+         "Quantity":"1"
+      },
+      {  
+         "Product":"C",
+         "Quantity":"1"
+      }
+   ]
+}
