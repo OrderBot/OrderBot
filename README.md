@@ -53,7 +53,7 @@ All incoming orders will be placed in a directory called inbound_orders. Designe
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i>BaseDB:-</b></i>
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Database to hold ware house inventory. As of now being file stream considered for this scope, it has the JSON file as ware house stock data.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Database to hold ware house inventory. As of now being file stream considered for this scope, it has the JSON file(ware_house.json) as ware house stock data.
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Config:-</b></i>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Config file for the project
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i>InventoryProcessor:-</b></i>
