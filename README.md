@@ -68,8 +68,8 @@ All incoming orders will be placed in a directory called inbound_orders. Designe
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NetworkStreamReader.py → reads from Network(only template, not implemented)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DBStreamReader.py → reads from DB(only template, not implemented)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DistributedReader.py → Reads from Hadoop (only template, not implemented)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ElasticDBReader.py
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CloudReader.py
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ElasticDBReader.py → Reads from Elastic Server (only template, not implemented)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CloudReader.py → Reads from Amazon Cloud (only template, not implemented)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Utils:-</b></i>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All utility modules
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i>inbound_orders:-</b></i>
