@@ -10,6 +10,8 @@ Developed to match Publisher-Subscriber pattern. Being proto type this implement
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.	Publisher  (Order receiver) – Itself confirms to factory pattern
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.	Subscriber (Order Processor) – Simple OOAD
+<br>
+The implementation classes(DistributedReader.py, CloudReader.py.......) that are not completed are not left as it is. They have been added with plain English test pesudo-code. Config file has attribute for all of them
 <br><br>
 <b><i>Aim:- </b></i>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
