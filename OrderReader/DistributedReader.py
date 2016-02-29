@@ -14,6 +14,9 @@ class HadoopReader(StreamReaderFactory):
     def read_order(this):
         """
         I will read any order coming from Hadoop
+        Pesudo-code
+        1. Install PyHive library
+        2. Connect to hive schema and  Run hive query to fetch the data
         """
         pass
 
