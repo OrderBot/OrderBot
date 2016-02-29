@@ -6,10 +6,13 @@ Given scope is an “Invoice (order and inventory) processing” system. Conside
 <b>Designed an intelligent Order Processing system capable of processing multiple invoices simultaneously.</b>
 <br>
 Developed to match Publisher-Subscriber pattern. Being proto type this implementation is made simple on the code without introducing any async messaging libraries like CELERY. Keeping ReaderFactory as publisher as it reads the order from DB and directly puts in to the subscriber which is InventoryAllocator, by employing multiprocessing queue in between them.
-<br>
+<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.	Publisher  (Order receiver) – Itself confirms to factory pattern
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.	Subscriber (Order Processor) – Simple OOAD
+<br><br>
+The implementation classes(DistributedReader.py, CloudReader.py.......) that are not completed are not left as it is. They have been added with plain english text pesudo-code/steps. Necessary libraries like PyHive, requests, boto are mentioned in the pseudo code.
+<br>Config file has attributes for all of them
 <br><br>
 <b><i>Aim:- </b></i>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -65,6 +68,8 @@ All incoming orders will be placed in a directory called inbound_orders. Designe
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NetworkStreamReader.py → reads from Network(only template, not implemented)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DBStreamReader.py → reads from DB(only template, not implemented)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DistributedReader.py → Reads from Hadoop (only template, not implemented)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ElasticDBReader.py → Reads from Elastic Server (only template, not implemented)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CloudReader.py → Reads from Amazon Cloud (only template, not implemented)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Utils:-</b></i>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All utility modules
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i>inbound_orders:-</b></i>
