@@ -58,16 +58,6 @@ def initialize(order_stream, order_dest):
         procs.append(proc)
         proc.start()
 
-    """
-    procs = []
-    log_to_stderr(logging.DEBUG)
-    for _ in xrange(len(order_list)):
-        proc = Process(target=parallel_processor, args=(proc_que, lck, processed_list))
-        procs.append(proc)
-        proc.start()
-
-    """
-
     for p in procs:
         p.join()
 
