@@ -2,7 +2,8 @@
 
 #Python STL Imports
 import sys
-from  multiprocessing import Process, Lock, JoinableQueue, Manager
+from  multiprocessing import Process, Lock, JoinableQueue, Manager, log_to_stderr
+import logging
 import uuid
 from optparse import OptionParser
 
@@ -45,14 +46,27 @@ def initialize(order_stream, order_dest):
     lck = Lock()
     processed_list = proc_mgr.dict()
 
+    procs = []
+    # Enable the below if you want process level debug info
+    # log_to_stderr(logging.DEBUG)
+
     # Made the files list as iterable for memory efficiency
     for ord_set in iter(order_list):
         ord_exec = InventoryAllocator(ord_set, str(uuid.uuid1()).split("-")[0], processed_list)
         proc_que.put(ord_exec)
-
-    procs = [Process(target=parallel_processor, args=(proc_que, lck, processed_list)) for _ in xrange(len(order_list))]
-    for proc in procs:
+        proc = Process(target=parallel_processor, args=(proc_que, lck, processed_list))
+        procs.append(proc)
         proc.start()
+
+    """
+    procs = []
+    log_to_stderr(logging.DEBUG)
+    for _ in xrange(len(order_list)):
+        proc = Process(target=parallel_processor, args=(proc_que, lck, processed_list))
+        procs.append(proc)
+        proc.start()
+
+    """
 
     for p in procs:
         p.join()
