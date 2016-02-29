@@ -6,11 +6,11 @@ Given scope is an “Invoice (order and inventory) processing” system. Conside
 <b>Designed an intelligent Order Processing system capable of processing multiple invoices simultaneously.</b>
 <br>
 Developed to match Publisher-Subscriber pattern. Being proto type this implementation is made simple on the code without introducing any async messaging libraries like CELERY. Keeping ReaderFactory as publisher as it reads the order from DB and directly puts in to the subscriber which is InventoryAllocator, by employing multiprocessing queue in between them.
-<br>
+<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.	Publisher  (Order receiver) – Itself confirms to factory pattern
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.	Subscriber (Order Processor) – Simple OOAD
-<br>
+<br><br>
 The implementation classes(DistributedReader.py, CloudReader.py.......) that are not completed are not left as it is. They have been added with plain english text pesudo-code/steps. Necessary libraries like PyHive, requests, boto are mentioned in the pseudo code.
 <br>Config file has attributes for all of them
 <br><br>
