@@ -1,7 +1,7 @@
 #**OrderBot**
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Given scope is an “Invoice (order and inventory) processing” system. Considering this in mind, this assignment has been prototyped and developed like a complete real time inventory processing system in all aspects.  Below are the salient features of this design.
+Given scope is an “Invoice (order and inventory) processing” system. Considering this in mind, this project has been prototyped and developed like a complete real time inventory processing system in all aspects.  Below are the salient features of this design.
 <br><br>
 <b>Designed an intelligent Order Processing system capable of processing multiple invoices simultaneously.</b>
 <br>
